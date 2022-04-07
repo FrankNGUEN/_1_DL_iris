@@ -52,15 +52,17 @@ from sklearn.svm import SVC
 url       = "https://raw.githubusercontent.com/jbrownlee/Datasets/master/iris.csv"
 names     = ['sepal-length', 'sepal-width', 'petal-length', 'petal-width', 'class']
 dataset   = read_csv(url, names=names)
+#------------------------------------------------------------------------------
 #3. Summarize the Dataset
+#------------------------------------------------------------------------------
 # shape
-#print(dataset.shape)
+print(dataset.shape)
 # head
-#print(dataset.head(20))
+print(dataset.head(20))
 # descriptions
-#print(dataset.describe())
+print(dataset.describe())
 # class distribution
-#print(dataset.groupby('class').size())
+print(dataset.groupby('class').size())
 #------------------------------------------------------------------------------
 #4. Data Visualization
 #------------------------------------------------------------------------------
